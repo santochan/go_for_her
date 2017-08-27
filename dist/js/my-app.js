@@ -7,16 +7,17 @@ var $$ = Dom7;
 // Add view
 var mainView = myApp.addView('.view-main', {
     // Because we use fixed-through navbar we can enable dynamic navbar
-    dynamicNavbar: true
+    dynamicNavbar: true,
+    domCache: true
 });
 
 // Callbacks to run specific code for specific pages, for example for About page:
-myApp.onPageInit('about', function (page) {
-    // run createContentPage func after link was clicked
-    $$('.create-page').on('click', function () {
-        createContentPage();
-    });
-});
+//myApp.onPageInit('about', function (page) {
+    //// run createContentPage func after link was clicked
+    //$$('.create-page').on('click', function () {
+        //createContentPage();
+    //});
+//});
 
 // Generate dynamic page
 var dynamicPageIndex = 0;

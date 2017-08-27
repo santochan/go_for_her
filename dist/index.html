@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <title>GoForHer</title>
+    <title>Go For Her</title>
     <!-- Path to Framework7 Library CSS-->
     <link rel="stylesheet" href="css/framework7.ios.min.css">
     <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
@@ -68,9 +68,22 @@
       <div class="view view-main">
         <!-- Top Navbar-->
         <div class="navbar">
+          <div data-page="index" class="navbar-inner">
+            <!-- We have home navbar without left link-->
+            <div class="center sliding">Go For Her</div>
+            <div class="right">
+              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+            </div>
+          </div>
+
           <div class="navbar-inner">
             <!-- We have home navbar without left link-->
-            <div class="center sliding">GoForHer</div>
+            <div data-page="index" class="center sliding">Go For Her</div>
+            <!-- Navbar inner for What can I do page-->
+            <div data-page="about" class="navbar-inner cached">
+              <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+              <div class="center sliding">What Can I do?</div>
+            </div>
 
           </div>
         </div>
@@ -81,12 +94,6 @@
             <!-- Scrollable page content-->
             <div class="page-content">
               <div class="content-block-title">Welcome To My Awesome App</div>
-              <!-- <div class="content-block">
-                <div class="content-block-inner">
-                  <p>Couple of worlds here because my app is so awesome!</p>
-                  <p>Duis sed erat ac eros ultrices pharetra id ut tellus. Praesent rhoncus enim ornare ipsum aliquet ultricies. Pellentesque sodales erat quis elementum sagittis.</p>
-                </div>
-              </div> -->
               <div class="row">
                 <div class="col-50"><a href="#" data-panel="left" class="button open-panel">choose language</a></div>
                 <div class="col-50"><a href="#" data-panel="right" class="button open-panel">choose area</a></div>
@@ -98,21 +105,48 @@
                 <div class="col-80"><a href="#" class="button">Are you experiencing DV?</a></div>
               </div>
               <div class="row">
-                <div class="col-80"><a href="#" class="button">What Can I do?</a></div>
+                <div class="col-80"><a href="#about"  class="button">What Can I do?</a></div>
               </div>
               <div class="content-block">
 
               </div>
             </div>
           </div>
+
+          <div data-page="about" class="page cached">
+            <div class="page-content">
+              <div class="content-block">
+                <div class="content-block-title">Legal Aid</div>
+                <ul>
+                  <li>Address: 355 Main Street, 1234</li>
+                  <li>Phone: 010-1119343</li>
+                </ul>
+                <div class="content-block-title">Local Government</div>
+                <ul>
+                  <li>Address: 355 Main Street, 1234</li>
+                  <li>Phone: 010-1119343</li>
+                </ul>
+                <div class="content-block-title">Police Offices</div>
+                <ul>
+                  <li>Address: 355 Main Street, 1234</li>
+                  <li>Phone: 010-1119343</li>
+                </ul>
+                <div class="content-block-title">Local Court</div>
+                <ul>
+                  <li>Address: 355 Main Street, 1234</li>
+                  <li>Phone: 010-1119343</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+
 
       </div>
     </div>
-    <!-- Path to Framework7 Library JS-->
+    
     <script type="text/javascript" src="js/framework7.min.js"></script>
     <!-- Path to your app js-->
     <script type="text/javascript" src="js/my-app.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
   </body>
 </html>
