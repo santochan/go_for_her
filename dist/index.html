@@ -67,48 +67,39 @@
       <!-- Your main view, should have "view-main" class-->
       <div class="view view-main">
         <!-- Top Navbar-->
-        <div class="navbar">
-          <div data-page="index" class="navbar-inner">
-            <!-- We have home navbar without left link-->
-            <div class="center sliding">Go For Her</div>
-            <div class="right">
-              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
-            </div>
-          </div>
 
-          <div class="navbar-inner">
-            <!-- We have home navbar without left link-->
-            <div data-page="index" class="center sliding">Go For Her</div>
-            <!-- Navbar inner for What can I do page-->
-            <div data-page="about" class="navbar-inner cached">
-              <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
-              <div class="center sliding">What Can I do?</div>
-            </div>
-            <div data-page="chat" class="navbar-inner cached">
-              <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
-              <div class="center sliding">Online Support</div>
-            </div>
-
-          </div>
-        </div>
         <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
         <div class="pages navbar-through toolbar-through">
           <!-- Page, data-page contains page name-->
           <div data-page="index" class="page">
+
             <!-- Scrollable page content-->
             <div class="page-content">
-              <div class="content-block-title">Welcome To My Awesome App</div>
-              <div class="row">
-                <div class="col-50"><a href="#" data-panel="left" class="button open-panel">choose language</a></div>
-                <div class="col-50"><a href="#" data-panel="right" class="button open-panel">choose area</a></div>
+              <img src="css/logo.png"/>
+              <!-- <div class="content-block">
+                <div class="content-block-inner">
+                  <p>Couple of worlds here because my app is so awesome!</p>
+                  <p>Duis sed erat ac eros ultrices pharetra id ut tellus. Praesent rhoncus enim ornare ipsum aliquet ultricies. Pellentesque sodales erat quis elementum sagittis.</p>
+                </div>
+              </div> -->
+              <div class="row her-btns">
+                <div class="item-title">District:</div>
+                <div class="item-input">
+                  <select>
+                    <option>中国</option>
+                    <option>America</option>
+                    <option>Senegal</option>
+                    <option>France</option>
+                  </select>
+                </div>
               </div>
-              <div class="row">
+              <div class="row her-btns">
                 <div class="col-80"><a href="#" class="button">What is Domestic Violence?</a></div>
               </div>
-              <div class="row">
+              <div class="row her-btns">
                 <div class="col-80"><a href="#" class="button">Are you experiencing DV?</a></div>
               </div>
-              <div class="row">
+              <div class="row her-btns">
                 <div class="col-80"><a href="#about"  class="button">What Can I do?</a></div>
               </div>
               <div class="content-block">
@@ -174,7 +165,7 @@
 
       </div>
     </div>
-    
+
     <script type="text/javascript" src="js/framework7.min.js"></script>
     <!-- Path to your app js-->
     <script type="text/javascript" src="js/my-app.js"></script>
